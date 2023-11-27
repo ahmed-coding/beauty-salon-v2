@@ -608,6 +608,7 @@
    "fetch_if_empty": 1,
    "fieldname": "add_to_transit",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Add to Transit",
    "no_copy": 1
   },
@@ -703,7 +704,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-11-27 02:37:35.950381",
+ "modified": "2023-11-27 02:51:14.115853",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Stock Entry",
