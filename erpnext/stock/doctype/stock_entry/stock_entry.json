@@ -12,6 +12,7 @@
   "stock_entry_type",
   "outgoing_stock_entry",
   "purpose",
+  "from_user",
   "add_to_transit",
   "work_order",
   "purchase_order",
@@ -697,6 +698,13 @@
    "fieldname": "section_break_ejvt",
    "fieldtype": "Section Break",
    "hidden": 1
+  },
+  {
+   "depends_on": "eval:doc.purpose==\"Material Issue\"",
+   "fieldname": "from_user",
+   "fieldtype": "Link",
+   "label": "From User",
+   "options": "User"
   }
  ],
  "icon": "fa fa-file-text",
@@ -704,7 +712,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-11-27 02:51:14.115853",
+ "modified": "2023-11-28 01:50:09.332792",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Stock Entry",

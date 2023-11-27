@@ -348,7 +348,7 @@
    "label": "More Information"
   },
   {
-   "default": "0",
+   "default": "1",
    "fieldname": "allow_zero_valuation_rate",
    "fieldtype": "Check",
    "label": "Allow Zero Valuation Rate",
@@ -378,7 +378,7 @@
    "print_hide": 1
   },
   {
-   "default": "0",
+   "default": "1",
    "depends_on": "s_warehouse",
    "fieldname": "allow_alternative_item",
    "fieldtype": "Check",
@@ -589,7 +589,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2023-05-09 12:41:18.210864",
+ "modified": "2023-11-27 22:14:38.890015",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Stock Entry Detail",

@@ -12,6 +12,7 @@
   "title",
   "material_request_type",
   "customer",
+  "from_user",
   "company",
   "column_break_2",
   "transaction_date",
@@ -351,13 +352,20 @@
   {
    "fieldname": "column_break_13",
    "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.material_request_type==\"Material Issue\"",
+   "fieldname": "from_user",
+   "fieldtype": "Link",
+   "label": "From User",
+   "options": "User"
   }
  ],
  "icon": "fa fa-ticket",
  "idx": 70,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-09-15 12:07:24.789471",
+ "modified": "2023-11-28 01:20:11.040888",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Material Request",
@@ -376,7 +384,6 @@
    "read": 1,
    "report": 1,
    "role": "Purchase Manager",
-   "set_user_permissions": 1,
    "share": 1,
    "submit": 1,
    "write": 1

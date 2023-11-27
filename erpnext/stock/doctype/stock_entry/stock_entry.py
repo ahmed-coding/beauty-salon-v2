@@ -291,6 +291,7 @@ class StockEntry(StockController):
 			"Repack",
 			"Send to Subcontractor",
 			"Material Consumption for Manufacture",
+   			"User Provided"
 		]
 
 		if self.purpose not in valid_purposes:
