@@ -73,7 +73,8 @@
    "label": "Batch No",
    "oldfieldname": "batch_no",
    "oldfieldtype": "Data",
-   "read_only": 1
+   "read_only": 1,
+   "report_hide": 1
   },
   {
    "fieldname": "warehouse",
@@ -241,11 +242,13 @@
    "fieldname": "project",
    "fieldtype": "Link",
    "label": "Project",
-   "options": "Project"
+   "options": "Project",
+   "report_hide": 1
   },
   {
    "fieldname": "company",
    "fieldtype": "Link",
+   "hidden": 1,
    "in_filter": 1,
    "label": "Company",
    "oldfieldname": "company",
@@ -253,6 +256,7 @@
    "options": "Company",
    "print_width": "150px",
    "read_only": 1,
+   "report_hide": 1,
    "search_index": 1,
    "width": "150px"
   },
@@ -334,7 +338,8 @@
    "fetch_from": "item_code.has_serial_no",
    "fieldname": "has_serial_no",
    "fieldtype": "Check",
-   "label": "Has Serial No"
+   "label": "Has Serial No",
+   "report_hide": 1
   },
   {
    "default": "0",
@@ -356,7 +361,7 @@
  "in_create": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-11-14 16:47:39.791967",
+ "modified": "2023-11-28 02:55:29.785225",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Stock Ledger Entry",

@@ -63,24 +63,24 @@
    "label": "Is Group Warehouse"
   },
   {
+   "default": "Company:company",
    "fieldname": "company",
    "fieldtype": "Link",
+   "hidden": 1,
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Company",
    "oldfieldname": "company",
    "oldfieldtype": "Link",
    "options": "Company",
+   "read_only": 1,
    "read_only_depends_on": "eval: !doc.__islocal",
-   "remember_last_selected_value": 1,
-   "reqd": 1,
-   "search_index": 1
+   "remember_last_selected_value": 1
   },
   {
    "default": "0",
    "fieldname": "disabled",
    "fieldtype": "Check",
-   "hidden": 1,
    "label": "Disabled"
   },
   {
@@ -91,13 +91,17 @@
    "description": "If blank, parent Warehouse Account or company default will be considered in transactions",
    "fieldname": "account",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Account",
-   "options": "Account"
+   "options": "Account",
+   "print_hide": 1,
+   "report_hide": 1
   },
   {
    "depends_on": "eval:!doc.__islocal",
    "fieldname": "address_and_contact",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Address and Contact"
   },
   {
@@ -118,6 +122,7 @@
    "collapsible": 1,
    "fieldname": "warehouse_contact_info",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Warehouse Contact Info"
   },
   {
@@ -244,6 +249,7 @@
    "collapsible": 1,
    "fieldname": "transit_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Transit"
   },
   {
@@ -255,7 +261,7 @@
  "idx": 1,
  "is_tree": 1,
  "links": [],
- "modified": "2023-05-29 13:10:43.333160",
+ "modified": "2023-11-28 03:25:53.191841",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Warehouse",

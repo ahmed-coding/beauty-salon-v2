@@ -26,6 +26,8 @@
   "set_warehouse",
   "items_section",
   "items",
+  "notes_section",
+  "note",
   "terms_tab",
   "terms_section_break",
   "tc_name",
@@ -106,6 +108,7 @@
   {
    "fieldname": "company",
    "fieldtype": "Link",
+   "hidden": 1,
    "in_standard_filter": 1,
    "label": "Company",
    "oldfieldname": "company",
@@ -113,9 +116,8 @@
    "options": "Company",
    "print_hide": 1,
    "print_width": "150px",
+   "read_only": 1,
    "remember_last_selected_value": 1,
-   "reqd": 1,
-   "search_index": 1,
    "width": "150px"
   },
   {
@@ -320,11 +322,13 @@
   {
    "fieldname": "terms_tab",
    "fieldtype": "Tab Break",
+   "hidden": 1,
    "label": "Terms"
   },
   {
    "fieldname": "more_info_tab",
    "fieldtype": "Tab Break",
+   "hidden": 1,
    "label": "More Info"
   },
   {
@@ -359,13 +363,24 @@
    "fieldtype": "Link",
    "label": "From User",
    "options": "User"
+  },
+  {
+   "depends_on": "eval:doc.material_request_type==\"Material Issue\"",
+   "fieldname": "notes_section",
+   "fieldtype": "Section Break",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Text Editor",
+   "label": "note"
   }
  ],
  "icon": "fa fa-ticket",
  "idx": 70,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-11-28 01:20:11.040888",
+ "modified": "2023-11-28 03:40:58.001178",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Material Request",
