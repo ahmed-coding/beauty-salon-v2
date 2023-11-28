@@ -99,6 +99,7 @@
   {
    "fieldname": "sample_retention_warehouse",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Sample Retention Warehouse",
    "options": "Warehouse"
   },
@@ -110,6 +111,7 @@
    "documentation_url": "https://docs.erpnext.com/docs/v14/user/manual/en/stock/articles/calculation-of-valuation-rate-in-fifo-and-moving-average",
    "fieldname": "valuation_method",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Default Valuation Method",
    "options": "FIFO\nMoving Average\nLIFO"
   },
@@ -306,21 +308,25 @@
   {
    "fieldname": "stock_validations_tab",
    "fieldtype": "Tab Break",
+   "hidden": 1,
    "label": "Stock Validations"
   },
   {
    "fieldname": "stock_planning_tab",
    "fieldtype": "Tab Break",
+   "hidden": 1,
    "label": "Stock Planning"
   },
   {
    "fieldname": "stock_closing_tab",
    "fieldtype": "Tab Break",
+   "hidden": 1,
    "label": "Stock Closing"
   },
   {
    "fieldname": "serial_and_batch_item_settings_tab",
    "fieldtype": "Tab Break",
+   "hidden": 1,
    "label": "Serial & Batch Item"
   },
   {
@@ -339,6 +345,7 @@
   {
    "fieldname": "stock_reservation_tab",
    "fieldtype": "Tab Break",
+   "hidden": 1,
    "label": "Stock Reservation"
   },
   {
@@ -395,22 +402,26 @@
   {
    "fieldname": "conversion_factor_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Stock UOM Quantity"
   },
   {
    "fieldname": "column_break_lznj",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "hidden": 1
   },
   {
    "default": "0",
    "fieldname": "allow_to_edit_stock_uom_qty_for_sales",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Allow to Edit Stock UOM Qty for Sales Documents"
   },
   {
    "default": "0",
    "fieldname": "allow_to_edit_stock_uom_qty_for_purchase",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Allow to Edit Stock UOM Qty for Purchase Documents"
   },
   {
@@ -427,7 +438,7 @@
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2023-10-18 12:35:30.068799",
+ "modified": "2023-11-28 04:35:10.220847",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Stock Settings",
