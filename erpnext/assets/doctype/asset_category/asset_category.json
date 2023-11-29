@@ -33,6 +33,7 @@
   {
    "fieldname": "finance_book_detail",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Finance Book Detail"
   },
   {
@@ -44,18 +45,20 @@
   {
    "fieldname": "section_break_2",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Accounts"
   },
   {
    "fieldname": "accounts",
    "fieldtype": "Table",
+   "hidden": 1,
    "label": "Accounts",
-   "options": "Asset Category Account",
-   "reqd": 1
+   "options": "Asset Category Account"
   },
   {
    "fieldname": "depreciation_options",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Depreciation Options"
   },
   {
@@ -66,10 +69,11 @@
   }
  ],
  "links": [],
- "modified": "2021-02-24 15:05:38.621803",
+ "modified": "2023-11-30 01:52:32.058211",
  "modified_by": "Administrator",
  "module": "Assets",
  "name": "Asset Category",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -114,5 +118,6 @@
  "show_name_in_global_search": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
+ "states": [],
  "track_changes": 1
 }
