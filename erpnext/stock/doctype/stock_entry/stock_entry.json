@@ -53,6 +53,8 @@
   "items_section",
   "items",
   "get_stock_and_rate",
+  "notes_section",
+  "notes",
   "section_break_19",
   "total_outgoing_value",
   "column_break_22",
@@ -706,6 +708,16 @@
    "fieldtype": "Link",
    "label": "From User",
    "options": "User"
+  },
+  {
+   "fieldname": "notes_section",
+   "fieldtype": "Section Break",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Notes"
   }
  ],
  "icon": "fa fa-file-text",
@@ -713,7 +725,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-11-28 04:05:39.825671",
+ "modified": "2023-11-30 00:52:55.480709",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Stock Entry",

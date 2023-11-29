@@ -21,6 +21,7 @@
   "column_break_9",
   "gender",
   "date_of_birth",
+  "cell_number",
   "salutation",
   "column_break1",
   "date_of_joining",
@@ -48,7 +49,7 @@
   "notice_number_of_days",
   "date_of_retirement",
   "contact_details",
-  "cell_number",
+  "column_break_oqki",
   "column_break_40",
   "personal_email",
   "company_email",
@@ -147,6 +148,7 @@
   {
    "fieldname": "salutation",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Salutation",
    "oldfieldname": "salutation",
    "oldfieldtype": "Select",
@@ -199,11 +201,11 @@
   {
    "fieldname": "company",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Company",
    "options": "Company",
    "print_hide": 1,
-   "remember_last_selected_value": 1,
-   "reqd": 1
+   "remember_last_selected_value": 1
   },
   {
    "default": "Active",
@@ -227,19 +229,18 @@
   {
    "fieldname": "gender",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Gender",
    "oldfieldname": "gender",
    "oldfieldtype": "Select",
-   "options": "Gender",
-   "reqd": 1
+   "options": "Gender"
   },
   {
    "fieldname": "date_of_birth",
    "fieldtype": "Date",
    "label": "Date of Birth",
    "oldfieldname": "date_of_birth",
-   "oldfieldtype": "Date",
-   "reqd": 1
+   "oldfieldtype": "Date"
   },
   {
    "fieldname": "date_of_joining",
@@ -253,6 +254,7 @@
    "allow_in_quick_entry": 1,
    "fieldname": "emergency_contact_details",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Emergency Contact"
   },
   {
@@ -277,6 +279,7 @@
    "collapsible": 1,
    "fieldname": "erpnext_user",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "User Details"
   },
   {
@@ -306,6 +309,7 @@
    "collapsible": 1,
    "fieldname": "employment_details",
    "fieldtype": "Tab Break",
+   "hidden": 1,
    "label": "Joining"
   },
   {
@@ -359,6 +363,7 @@
   {
    "fieldname": "designation",
    "fieldtype": "Link",
+   "hidden": 1,
    "in_global_search": 1,
    "in_list_view": 1,
    "label": "Designation",
@@ -370,6 +375,7 @@
   {
    "fieldname": "reports_to",
    "fieldtype": "Link",
+   "hidden": 1,
    "ignore_user_permissions": 1,
    "label": "Reports to",
    "oldfieldname": "reports_to",
@@ -379,6 +385,7 @@
   {
    "fieldname": "branch",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Branch",
    "oldfieldname": "branch",
    "oldfieldtype": "Link",
@@ -430,6 +437,7 @@
    "collapsible": 1,
    "fieldname": "contact_details",
    "fieldtype": "Tab Break",
+   "hidden": 1,
    "label": "Address & Contacts"
   },
   {
@@ -441,12 +449,14 @@
   {
    "fieldname": "prefered_contact_email",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Prefered Contact Email",
    "options": "\nCompany Email\nPersonal Email\nUser ID"
   },
   {
    "fieldname": "prefered_email",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Prefered Email",
    "options": "Email",
    "read_only": 1
@@ -455,6 +465,7 @@
    "description": "Provide Email Address registered in company",
    "fieldname": "company_email",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Company Email",
    "oldfieldname": "company_email",
    "oldfieldtype": "Data",
@@ -470,11 +481,13 @@
    "default": "0",
    "fieldname": "unsubscribed",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Unsubscribed"
   },
   {
    "fieldname": "column_break4",
    "fieldtype": "Column Break",
+   "hidden": 1,
    "width": "50%"
   },
   {
@@ -616,8 +629,8 @@
    "fieldname": "relieving_date",
    "fieldtype": "Date",
    "label": "Relieving Date",
-   "no_copy": 1,
    "mandatory_depends_on": "eval:doc.status == \"Left\"",
+   "no_copy": 1,
    "oldfieldname": "relieving_date",
    "oldfieldtype": "Date"
   },
@@ -704,6 +717,7 @@
    "collapsible": 1,
    "fieldname": "attendance_and_leave_details",
    "fieldtype": "Tab Break",
+   "hidden": 1,
    "label": "Attendance & Leaves"
   },
   {
@@ -744,6 +758,7 @@
    "collapsible": 1,
    "fieldname": "address_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Address"
   },
   {
@@ -753,11 +768,13 @@
   {
    "fieldname": "profile_tab",
    "fieldtype": "Tab Break",
+   "hidden": 1,
    "label": "Profile"
   },
   {
    "fieldname": "passport_details_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Passport Details"
   },
   {
@@ -817,13 +834,17 @@
    "fieldname": "iban",
    "fieldtype": "Data",
    "label": "IBAN"
+  },
+  {
+   "fieldname": "column_break_oqki",
+   "fieldtype": "Column Break"
   }
  ],
  "icon": "fa fa-user",
  "idx": 24,
  "image_field": "image",
  "links": [],
- "modified": "2023-10-04 10:57:05.174592",
+ "modified": "2023-11-30 01:32:25.631463",
  "modified_by": "Administrator",
  "module": "Setup",
  "name": "Employee",
@@ -860,7 +881,6 @@
    "read": 1,
    "report": 1,
    "role": "HR Manager",
-   "set_user_permissions": 1,
    "share": 1,
    "write": 1
   }
