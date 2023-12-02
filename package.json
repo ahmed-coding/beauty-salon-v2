@@ -3,7 +3,7 @@
   "description": "Open Source ERP System powered by the Frappe Framework",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/frappe/erpnext.git"
+    "url": "git+https://github.com/ahmed-coding/beauty-salon-v2.git"
   },
   "homepage": "https://erpnext.com",
   "author": "Frappe Technologies Pvt. Ltd.",

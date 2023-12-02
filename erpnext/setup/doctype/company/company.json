@@ -794,6 +794,7 @@
   {
    "fieldname": "buying_and_selling_tab",
    "fieldtype": "Tab Break",
+   "hidden": 1,
    "label": "Buying and Selling"
   },
   {
@@ -813,7 +814,7 @@
  "image_field": "company_logo",
  "is_tree": 1,
  "links": [],
- "modified": "2023-11-27 03:08:55.197335",
+ "modified": "2023-12-02 07:41:52.676763",
  "modified_by": "Administrator",
  "module": "Setup",
  "name": "Company",
