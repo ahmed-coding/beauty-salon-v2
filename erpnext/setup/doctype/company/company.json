@@ -789,6 +789,7 @@
   {
    "fieldname": "accounts_tab",
    "fieldtype": "Tab Break",
+   "hidden": 1,
    "label": "Accounts"
   },
   {
@@ -814,7 +815,7 @@
  "image_field": "company_logo",
  "is_tree": 1,
  "links": [],
- "modified": "2023-12-02 07:41:52.676763",
+ "modified": "2023-12-02 08:06:37.813860",
  "modified_by": "Administrator",
  "module": "Setup",
  "name": "Company",
