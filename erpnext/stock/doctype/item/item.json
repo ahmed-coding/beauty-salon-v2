@@ -17,6 +17,7 @@
   "item_name",
   "item_group",
   "stock_uom",
+  "brand",
   "column_break0",
   "disabled",
   "allow_alternative_item",
@@ -41,7 +42,6 @@
   "uoms",
   "section_break_11",
   "description",
-  "brand",
   "sb_barcodes",
   "barcodes",
   "dashboard_tab",
@@ -852,6 +852,7 @@
   {
    "fieldname": "purchasing_tab",
    "fieldtype": "Tab Break",
+   "hidden": 1,
    "label": "Purchasing"
   },
   {
@@ -905,7 +906,7 @@
  "index_web_pages_for_search": 1,
  "links": [],
  "make_attachments_public": 1,
- "modified": "2023-11-28 03:46:47.740522",
+ "modified": "2023-12-02 05:09:38.626574",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Item",

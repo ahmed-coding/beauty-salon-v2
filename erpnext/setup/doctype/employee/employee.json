@@ -522,6 +522,7 @@
    "collapsible": 1,
    "fieldname": "personal_details",
    "fieldtype": "Tab Break",
+   "hidden": 1,
    "label": "Personal"
   },
   {
@@ -558,6 +559,7 @@
   {
    "fieldname": "blood_group",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Blood Group",
    "options": "\nA+\nA-\nB+\nB-\nAB+\nAB-\nO+\nO-"
   },
@@ -615,6 +617,7 @@
    "collapsible": 1,
    "fieldname": "exit",
    "fieldtype": "Tab Break",
+   "hidden": 1,
    "label": "Exit",
    "oldfieldtype": "Section Break"
   },
@@ -844,7 +847,7 @@
  "idx": 24,
  "image_field": "image",
  "links": [],
- "modified": "2023-11-30 01:32:25.631463",
+ "modified": "2023-12-02 04:28:10.891831",
  "modified_by": "Administrator",
  "module": "Setup",
  "name": "Employee",

@@ -361,8 +361,8 @@
    "depends_on": "eval:doc.material_request_type==\"Material Issue\"",
    "fieldname": "from_user",
    "fieldtype": "Link",
-   "label": "From User",
-   "options": "User"
+   "label": "Employee",
+   "options": "Employee"
   },
   {
    "depends_on": "eval:doc.material_request_type==\"Material Issue\"",
@@ -380,7 +380,7 @@
  "idx": 70,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-11-28 03:40:58.001178",
+ "modified": "2023-12-02 04:23:49.687098",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Material Request",
