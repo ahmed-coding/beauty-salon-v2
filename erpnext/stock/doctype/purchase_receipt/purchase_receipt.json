@@ -260,6 +260,7 @@
   {
    "fieldname": "company",
    "fieldtype": "Link",
+   "hidden": 1,
    "in_standard_filter": 1,
    "label": "Company",
    "oldfieldname": "company",
@@ -268,13 +269,13 @@
    "print_hide": 1,
    "print_width": "150px",
    "remember_last_selected_value": 1,
-   "reqd": 1,
    "width": "150px"
   },
   {
    "default": "0",
    "fieldname": "is_return",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Is Return",
    "no_copy": 1,
    "print_hide": 1,
@@ -359,6 +360,7 @@
    "collapsible": 1,
    "fieldname": "currency_and_price_list",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Currency and Price List",
    "options": "fa fa-tag"
   },
@@ -369,8 +371,7 @@
    "oldfieldname": "currency",
    "oldfieldtype": "Select",
    "options": "Currency",
-   "print_hide": 1,
-   "reqd": 1
+   "print_hide": 1
   },
   {
    "description": "Rate at which supplier's currency is converted to company's base currency",
@@ -380,8 +381,7 @@
    "oldfieldname": "conversion_rate",
    "oldfieldtype": "Currency",
    "precision": "9",
-   "print_hide": 1,
-   "reqd": 1
+   "print_hide": 1
   },
   {
    "fieldname": "column_break2",
@@ -418,6 +418,7 @@
    "default": "0",
    "fieldname": "ignore_pricing_rule",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Ignore Pricing Rule",
    "permlevel": 1,
    "print_hide": 1
@@ -431,6 +432,7 @@
   {
    "fieldname": "set_warehouse",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Accepted Warehouse",
    "options": "Warehouse",
    "print_hide": 1
@@ -438,6 +440,7 @@
   {
    "fieldname": "rejected_warehouse",
    "fieldtype": "Link",
+   "hidden": 1,
    "ignore_user_permissions": 1,
    "label": "Rejected Warehouse",
    "no_copy": 1,
@@ -448,12 +451,14 @@
   },
   {
    "fieldname": "col_break_warehouse",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "hidden": 1
   },
   {
    "default": "0",
    "fieldname": "is_subcontracted",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Is Subcontracted",
    "oldfieldname": "is_subcontracted",
    "oldfieldtype": "Select",
@@ -464,6 +469,7 @@
    "depends_on": "eval:doc.is_subcontracted",
    "fieldname": "supplier_warehouse",
    "fieldtype": "Link",
+   "hidden": 1,
    "ignore_user_permissions": 1,
    "label": "Supplier Warehouse",
    "no_copy": 1,
@@ -495,14 +501,18 @@
    "collapsible": 1,
    "fieldname": "pricing_rule_details",
    "fieldtype": "Section Break",
-   "label": "Pricing Rules"
+   "hidden": 1,
+   "label": "Pricing Rules",
+   "report_hide": 1
   },
   {
    "fieldname": "pricing_rules",
    "fieldtype": "Table",
    "label": "Pricing Rule Detail",
    "options": "Pricing Rule Detail",
-   "read_only": 1
+   "print_hide": 1,
+   "read_only": 1,
+   "report_hide": 1
   },
   {
    "depends_on": "supplied_items",
@@ -518,11 +528,13 @@
    "collapsible_depends_on": "supplied_items",
    "fieldname": "raw_material_details",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Raw Materials Consumed",
    "oldfieldtype": "Section Break",
    "options": "fa fa-table",
    "print_hide": 1,
-   "read_only": 1
+   "read_only": 1,
+   "report_hide": 1
   },
   {
    "fieldname": "supplied_items",
@@ -548,14 +560,17 @@
   {
    "fieldname": "base_total",
    "fieldtype": "Currency",
+   "hidden": 1,
    "label": "Total (Company Currency)",
    "options": "Company:company:default_currency",
    "print_hide": 1,
-   "read_only": 1
+   "read_only": 1,
+   "report_hide": 1
   },
   {
    "fieldname": "base_net_total",
    "fieldtype": "Currency",
+   "hidden": 1,
    "label": "Net Total (Company Currency)",
    "oldfieldname": "net_total",
    "oldfieldtype": "Currency",
@@ -563,7 +578,7 @@
    "print_hide": 1,
    "print_width": "150px",
    "read_only": 1,
-   "reqd": 1,
+   "report_hide": 1,
    "width": "150px"
   },
   {
@@ -598,6 +613,7 @@
   {
    "fieldname": "taxes_charges_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "hide_border": 1,
    "label": "Taxes and Charges",
    "oldfieldtype": "Section Break"
@@ -622,6 +638,7 @@
   {
    "fieldname": "taxes_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "hide_border": 1
   },
   {
@@ -645,6 +662,7 @@
    "collapsible": 1,
    "fieldname": "sec_tax_breakup",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Tax Breakup"
   },
   {
@@ -654,11 +672,13 @@
    "no_copy": 1,
    "oldfieldtype": "HTML",
    "print_hide": 1,
-   "read_only": 1
+   "read_only": 1,
+   "report_hide": 1
   },
   {
    "fieldname": "totals",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "oldfieldtype": "Section Break",
    "options": "fa fa-money"
   },
@@ -730,6 +750,7 @@
    "collapsible": 1,
    "fieldname": "section_break_42",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Additional Discount"
   },
   {
@@ -880,7 +901,6 @@
    "default": "Draft",
    "fieldname": "status",
    "fieldtype": "Select",
-   "in_standard_filter": 1,
    "label": "Status",
    "no_copy": 1,
    "oldfieldname": "status",
@@ -889,7 +909,7 @@
    "print_hide": 1,
    "print_width": "150px",
    "read_only": 1,
-   "reqd": 1,
+   "report_hide": 1,
    "search_index": 1,
    "width": "150px"
   },
@@ -928,6 +948,7 @@
   {
    "fieldname": "project",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Project",
    "options": "Project"
   },
@@ -1101,7 +1122,10 @@
    "default": "0",
    "fieldname": "apply_putaway_rule",
    "fieldtype": "Check",
-   "label": "Apply Putaway Rule"
+   "hidden": 1,
+   "label": "Apply Putaway Rule",
+   "print_hide": 1,
+   "report_hide": 1
   },
   {
    "depends_on": "eval:!doc.__islocal",
@@ -1133,11 +1157,13 @@
    "collapsible": 1,
    "fieldname": "accounting_dimensions_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Accounting Dimensions"
   },
   {
    "fieldname": "cost_center",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Cost Center",
    "options": "Cost Center"
   },
@@ -1156,11 +1182,13 @@
   {
    "fieldname": "address_and_contact_tab",
    "fieldtype": "Tab Break",
+   "hidden": 1,
    "label": "Address & Contact"
   },
   {
    "fieldname": "terms_tab",
    "fieldtype": "Tab Break",
+   "hidden": 1,
    "label": "Terms"
   },
   {
@@ -1176,7 +1204,8 @@
   },
   {
    "fieldname": "column_break_12",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "hidden": 1
   },
   {
    "fieldname": "column_break_31",
@@ -1242,7 +1271,7 @@
  "idx": 261,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-10-01 21:00:44.556816",
+ "modified": "2023-12-03 21:34:19.331603",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Purchase Receipt",
