@@ -706,8 +706,8 @@
    "depends_on": "eval:doc.purpose==\"Material Issue\"",
    "fieldname": "from_user",
    "fieldtype": "Link",
-   "label": "From User",
-   "options": "User"
+   "label": "Employee",
+   "options": "Employee"
   },
   {
    "fieldname": "notes_section",
@@ -725,7 +725,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-11-30 00:52:55.480709",
+ "modified": "2023-12-04 00:00:19.055852",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Stock Entry",
