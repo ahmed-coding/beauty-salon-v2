@@ -75,10 +75,11 @@
  "icon": "fa fa-edit",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2020-10-02 12:03:02.359202",
+ "modified": "2023-12-06 05:11:30.617718",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Item Attribute",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -89,9 +90,34 @@
    "role": "Item Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock User",
+   "share": 1,
+   "write": 1
   }
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
+ "states": [],
  "track_changes": 1
 }

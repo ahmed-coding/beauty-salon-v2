@@ -865,8 +865,8 @@ Employee Transfer cannot be submitted before Transfer Date ,لا يمكن تقد
 Employee cannot report to himself.,الموظف لا يمكن أن يقدم تقريرا إلى نفسه.\n<br>\nEmployee cannot report to himself.,
 Employee {0} has already applied for {1} between {2} and {3} : ,الموظف {0} قد طبق بالفعل على {1} بين {2} و {3}:,
 Employee {0} of grade {1} have no default leave policy,ليس لدى الموظف {0} من الدرجة {1} سياسة إجازة افتراضية,
-Enable / disable currencies.,تمكين / تعطيل العملات .,
-Enabled,تمكين,
+Enable / disable currencies.,تفعيل / تعطيل العملات .,
+Enabled,تفعيل,
 "Enabling 'Use for Shopping Cart', as Shopping Cart is enabled and there should be at least one Tax Rule for Shopping Cart",تمكين &quot;استخدام لسلة التسوق، كما تم تمكين سلة التسوق وأن يكون هناك واحد على الأقل القاعدة الضريبية لسلة التسوق,
 End Date,نهاية التاريخ,
 End Date can not be less than Start Date,تاريخ النهاية لا يمكن أن يكون اقل من تاريخ البدء\n<br>\nEnd Date can not be less than Start Date,
@@ -2938,7 +2938,7 @@ Valid from date must be less than valid upto date,صالح من تاريخ يج�
 Valid till date cannot be before transaction date,صالحة حتى تاريخ لا يمكن أن يكون قبل تاريخ المعاملة,
 Validity,الصلاحية,
 Validity period of this quotation has ended.,انتهت فترة صلاحية هذا الاقتباس.,
-Valuation Rate,سعر التقييم,
+Valuation Rate,سعر الشراء,
 Valuation Rate is mandatory if Opening Stock entered,معدل التقييم إلزامي إذا ادخلت قيمة مبدئية للمخزون\n<br>\nValuation Rate is mandatory if Opening Stock entered,
 Valuation type charges can not marked as Inclusive,لا يمكن وضع علامة على رسوم التقييم على انها شاملة,
 Value Or Qty,القيمة أو الكمية,
@@ -5608,7 +5608,7 @@ Authorization URL,عنوان التخويل,
 Quickbooks Company ID,معرّف شركة Quickbooks,
 Company Settings,إعدادات الشركة,
 Default Shipping Account,حساب الشحن الافتراضي,
-Default Warehouse,النماذج الافتراضية,
+Default Warehouse,المستودع الأفتراضي,
 Default Cost Center,مركز التكلفة الافتراضي,
 Undeposited Funds Account,حساب الأموال غير المدعومة,
 Shopify Log,سجل Shopify,
@@ -7291,7 +7291,7 @@ Out of AMC,من AMC,
 Warranty Period (Days),فترة الضمان (أيام),
 Serial No Details,تفاصيل المسلسل,
 MAT-STE-.YYYY.-,MAT-STE-.YYYY.-,
-Stock Entry Type,نوع إدخال الأسهم,
+Stock Entry Type,نوع الأدخال للمخزون,
 Stock Entry (Outward GIT),إدخال الأسهم (GIT للخارج),
 Material Consumption for Manufacture,اهلاك المواد للتصنيع,
 Repack,أعد حزم,
@@ -7347,7 +7347,7 @@ Quantity Difference,الكمية الفرق,
 Amount Difference,مقدار الفرق,
 Item Naming By,تسمية السلعة بواسطة,
 Default Item Group,المجموعة الافتراضية للمواد,
-Default Stock UOM,افتراضي وحدة قياس السهم,
+Default Stock UOM,وحدة القياس الافتراضية للمخزن,
 Sample Retention Warehouse,مستودع الاحتفاظ بالعينات,
 Default Valuation Method,أسلوب التقييم الافتراضي,
 Show Barcode Field,مشاهدة الباركود الميدان,
@@ -8743,3 +8743,6 @@ WhatsApp,ال WhatsApp,
 Make a call,إجراء مكالمة,
 Approve,وافق,
 Reject,رفض,
+Cost to Company (CTC),الراتب المعتمد,
+Salary Currency,عملة الراتب,
+Company Details,بيانات الشركة,
